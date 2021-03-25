@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Catalyst | Product Details </title>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" href="/images/catalyst.png">
+</head>
+<body>
+	
+	<!-- GRID CONTAINER  FOR THE NAVBAR  diplays 2 columns-->
+<div class="grid-container">
+
+<!--GRID CONTAINER 1-->
+	<div class="container-1">
+		
+		<div>
+			<img src="images/catalyst.png" alt="logo" id="logo">
+		</div>
+	</div>		
+
+ 
+
+	<div class="container-2">
+		<ul class="nav">
+			<li>
+				<a href="#">MEN</a>
+				
+			</li>
+			<li>
+				<a href="#">WOMEN</a>
+			</li>
+			
+			<li>
+				<a href="#"> BOYS</a>
+			</li>
+			
+			<li>
+				<a href="#">GIRLS</a>
+			</li>
+			
+			<li>
+				<a href="#">Contact</a>
+			</li>
+			
+		</ul>
+	</div>
+	</div>
+	
+	<!--  END OF NAV-BAR ELEMENT -->
+	
+	<div class="container-products">
+<!--		3 GRID -->
+
+		<div class="product-inner-1"> 
+		<!--	INNER 1 GRID -->
+			<img src="images/shirt-free.jpg" alt=""  class="main-shirt">
+			<img src="images/boy-shirt.jpg" alt=""  class="main-shirt">
+			<img src="images/shirt.jpg" alt="" class="main-shirt">
+		</div>
+		
+		
+		
+		<div class="product-inner-2">
+			<img src="images/shirt.jpg" alt="">
+		</div>
+		
+		
+		<div class="product-inner-3">
+			<div>
+				<h1 id='item-title'>Boys' Stillwater Sherpa 1/4-Zip </h1>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half"></i>
+				<span><u>28 Reviews</u></span>
+				<h1 class="h1">FREE GROUND SHIPPING </h1>
+				
+				<h1 class="price" id="item-price">Price:<span >$</span> 48.99 
+				
+				
+				</h1>
+			</div>
+			
+			<div class="option">
+				<small>Select a size: </small>
+				<select name="" id="item-size">
+					
+					<option value="small">Small</option>
+					<option value="medium" selected>Medium</option>
+					<option value="large">Large</option>
+				</select>
+				
+			</div>
+			
+<!--			IMPLEMENT QUANTITY SECTION OF THE LEFT GRID IN HERE  -->
+	
+			<div class="qty">
+
+				
+					<button onclick="decrementValue()">
+					
+						<i class="fa fa-minus"></i>
+					
+					</button>
+					
+					<input class="item-qty" value="0" type="text" id="number" />
+					
+					<button onclick="incrementValue()">
+						<i   class="fa fa-plus"></i>
+					</button>
+				</div>
+				
+				
+				
+				
+			
+		
+		
+			<div class="cart" >
+				
+					<div>
+						<button  id="myBtn">
+							<i class="fa fa-cart-arrow-down"> 
+							Add to Cart
+						</i>
+						</button>
+					</div>
+			</div>
+			
+			<!--	TRYING THE CLICK AND INCREMENT BUTTON -->
+			
+						
+			
+		</div>
+		
+	</div>
+	
+
+
+<!-- Trigger/Open The Modal -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3><b>Item Added to Cart</b></h3>
+
+  <!--    GRID OF THE POP -->
+   
+     <div class="pop-grid">
+     	<img src="images/shirt.jpg" alt="">
+     	<div>
+<!--     	SECTION FILLED WITH LOCAL STORAGE-->
+     		<h3 id="title-picked"></h3>
+     		<p id="price-picked"> </p>
+     		<p id="size-picked">  </p>
+     		<p id="qty-picked">Qty: here </p>
+     		<p id="total-picked"></p>
+     	</div>
+     
+     	
+     </div>
+    
+<!--    trial -->
+ <div class="cart" >
+				
+					<div>
+					<a href="checkout.html">
+						<button  id="checkBtn">
+							<i class="fa fa-check"> Checkout </i>
+						</button>
+						
+						
+					</div>
+			</div>
+ 
+<!-- end of trial -->
+  </div>
+
+</div>
+<!--	end of the pop -->
+	<script src="https://kit.fontawesome.com/719954d4ba.js" crossorigin="anonymous"></script>
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
